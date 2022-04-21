@@ -1,13 +1,146 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image:url("http://i.imgur.com/aBayW5C.png");
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_div
+{ display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1% 5%;
+  box-shadow: 1px 1px 5px gray;
+}
+.sign_div{
+  width:350px;
+  padding: 2% 5%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.sign_div h3{
+    line-height: 1.66;
+    font-weight: 700;
+    color: #222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-group {
+  position: relative;
+  overflow: hidden;
+  margin-bottom:20px ;
+}
+label {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  color: #222;
+}
+.input{
+  width:100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 25px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  box-sizing: border-box;
+  outline: none;
+}
+.image{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 2%;
+  
+
+}
+.image p{
+  font-size: 14px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  color: rgb(24, 19, 19);
+  text-decoration: underline;
+  font-weight: 500;
+  letter-spacing:1px;
+  padding-bottom:8px;
+}
+.btn{
+  box-sizing: border-box;
+  margin-right: 0%;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@media (max-width:850px){
+  .form_div{
+    width:60%;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top :60px;
+    justify-content: space-between;
+  }
+
+  .sign_div{
+    width:90%;
+    height:auto;
+    justify-content: center;
+  
+  }
+  .sign_div h3{
+    text-align: center;
+  }
+  .image{
+    text-align: center;
+    justify-content: center;
+    width:90% ;
+  }
+  .image img{
+    padding-bottom:20px;
+  }
+  .form-group{
+    align-items: center;
+    text-align: center;
+  }
+  
 }
+@media (max-width:500px){
+  .image{
+    display: none;
+  }
+  .main{
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:120px;
+  }
+  .btn{
+    margin-bottom: 20px;
+  }
+}
+
+
+
